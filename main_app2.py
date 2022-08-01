@@ -78,7 +78,7 @@ df = pd.DataFrame({"Location" : ["bangalore","hyderabad"],
     
 def main():
     #Adding title
-
+    st.markdown('<style>body{background-color: #021c1e;}</style>',unsafe_allow_html=True)
     st.markdown("""<div style="background-color:{};padding:10px;border-radius:18px">
     <h1 style="color:white;text-align:center;">CRM Classification System</h1>
     </div>
