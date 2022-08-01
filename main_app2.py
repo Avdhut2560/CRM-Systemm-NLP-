@@ -99,7 +99,9 @@ def main():
     """.format('#1e656d'),unsafe_allow_html=True)
     
     st.markdown("")
-
+    
+    with st.expander("Examples"):
+        st.table(df)
     #Adding selectbox for the location
     loc = st.selectbox("Choose a location :",["None",'ahmedabad', 'aurangabad', 'australia', 'bangalore', 'bihar',
        'bilgi', 'chennai', 'coimbatore', 'delhi', 'faridabad', 'ghazibad',
@@ -128,8 +130,7 @@ def main():
         else:
             st.error(result)
             
-    with st.expander("Examples"):
-        st.table(df)
+
         
         
     st.markdown("***") 
